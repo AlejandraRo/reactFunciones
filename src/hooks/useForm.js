@@ -3,12 +3,13 @@ import { useState } from "react"
 export const useForm = (initialForm={}) => {
     
     const [formState, setFormState] = useState({
-        username:'',
-        email:'',
-        password:''
+        // username:'',
+        // email:'',
+        // password:''
     })
 
-    const {username,email,password}=formState
+    // const {username,email,password}=formState
+    const tarea=formState
 
     const onInputChange=({target})=>{
     
@@ -23,7 +24,7 @@ export const useForm = (initialForm={}) => {
     ...formState,
     formState,
     onInputChange
-
+    
     
   }
 }
